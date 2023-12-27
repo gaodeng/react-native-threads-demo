@@ -1,0 +1,21 @@
+diff --git a/node_modules/expo-dev-launcher/ios/ReactNative/EXDevLauncherBundleURLProviderInterceptor.swift b/node_modules/expo-dev-launcher/ios/ReactNative/EXDevLauncherBundleURLProviderInterceptor.swift
+index 2aff628..a2fe40d 100644
+--- a/node_modules/expo-dev-launcher/ios/ReactNative/EXDevLauncherBundleURLProviderInterceptor.swift
++++ b/node_modules/expo-dev-launcher/ios/ReactNative/EXDevLauncherBundleURLProviderInterceptor.swift
+@@ -12,11 +12,11 @@ public class EXDevLauncherBundleURLProviderInterceptor: NSObject {
+   }
+ 
+   static private func swizzle() {
+-    EXDevLauncherUtils.swizzle(
+-      selector: #selector(RCTBundleURLProvider.guessPackagerHost),
+-      withSelector: #selector(RCTBundleURLProvider.EXDevLauncher_guessPackagerHost),
+-      forClass: RCTBundleURLProvider.self
+-    )
++//    EXDevLauncherUtils.swizzle(
++//      selector: #selector(RCTBundleURLProvider.guessPackagerHost),
++//      withSelector: #selector(RCTBundleURLProvider.EXDevLauncher_guessPackagerHost),
++//      forClass: RCTBundleURLProvider.self
++//    )
+   }
+ }
+ 
